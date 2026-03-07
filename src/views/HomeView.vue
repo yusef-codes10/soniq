@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <nav>navbar</nav>
+  <h1>The is the Home vue</h1>
 </template>
 
 <style scoped></style>

@@ -1,7 +1,11 @@
-<script setup></script>
+<script setup>
+import NavBar from './components/NavBar.vue'
+import HomeView from './views/HomeView.vue'
+</script>
 
 <template>
-  <h1>You did it!</h1>
+  <NavBar />
+  <HomeView />
 </template>
 
 <style scoped></style>
