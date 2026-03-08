@@ -4,7 +4,7 @@
   <nav>
     <h2 class="logo">Soniq</h2>
     <div class="links">
-      <ul>
+      <ul class="hidden">
         <li>Layouts</li>
         <li>buttons</li>
         <li>forms</li>
@@ -38,5 +38,11 @@ ul {
   list-style-type: none;
   gap: 1rem;
   cursor: pointer;
+}
+
+@media (max-width: 620px) {
+  .hidden {
+    display: none;
+  }
 }
 </style>
