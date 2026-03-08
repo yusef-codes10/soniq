@@ -28,6 +28,8 @@ nav {
 
   box-shadow: 0.25rem 0.25rem #121212;
   height: 10dvh;
+
+  background-color: var(--brand-color);
 }
 
 ul {

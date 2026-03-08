@@ -2,6 +2,28 @@
 
     --title-font: 'Bricolage Grotesque', sans-serif;
     --main-font: 'Space Grotesk', sans-serif;
+
+    /* Backgrounds */
+    --bg-color: #DCEBFE;
+    --surface-color: #FFFFFF;
+
+    /* Brand */
+    --brand-color: #5294FF;
+    --brand-hover: #3F7FE3;
+
+    /* Electric accent */
+    --secondary-color: #FFD84D;
+    --secondary-hover: #F4C430;
+
+    /* Text */
+    --text-color: #1A1A1A;
+    --text-light: #5A5A6E;
+
+    /* Language colors (keep these) */
+    --html-color: #DD4B25;
+    --css-color: #2164AF;
+    --js-color: #F7DF1E;
+
 }
 
 * {
