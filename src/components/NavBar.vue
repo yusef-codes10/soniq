@@ -16,6 +16,10 @@
 
 <style scoped>
 nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   font-size: 1.5rem;
   /* background-color: #d7d6cb; */
   padding: 0.75rem 1rem;
@@ -24,5 +28,12 @@ nav {
 
   box-shadow: 0.25rem 0.25rem #121212;
   height: 10dvh;
+}
+
+ul {
+  display: inline-flex;
+  list-style-type: none;
+  gap: 1rem;
+  cursor: pointer;
 }
 </style>
