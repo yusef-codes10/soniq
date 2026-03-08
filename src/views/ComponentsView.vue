@@ -1,23 +1,13 @@
 <script setup>
 import CardComponent from '@/components/ui/CardComponent.vue'
+import cards from '@/data/cards.js'
 </script>
 
 <template>
   <div class="components">
     This is the components vie
     <div class="cards-grid">
-      <CardComponent> </CardComponent>
-      <CardComponent />
-      <CardComponent />
-      <CardComponent />
-      <CardComponent />
-      <CardComponent />
-      <CardComponent />
-      <CardComponent />
-      <CardComponent />
-      <CardComponent />
-      <CardComponent />
-      <CardComponent />
+      <CardComponent v-for="card in cards" :key="card.id" :title="card.name"> </CardComponent>
     </div>
   </div>
 </template>
