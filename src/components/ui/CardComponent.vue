@@ -2,12 +2,15 @@
 </script>
 
 <template>
-  <div class="card border">This is the card</div>
+  <div class="card border">
+    This is the card
+    <slot></slot>
+  </div>
 </template>
 
 <style scoped>
 .card {
-  height: 100px;
+  height: auto;
   width: 100%;
   background-color: springgreen;
   font-size: 2rem;

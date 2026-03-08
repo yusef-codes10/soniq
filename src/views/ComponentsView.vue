@@ -6,6 +6,7 @@ import CardComponent from '@/components/ui/CardComponent.vue'
   <div class="components">
     This is the components vie
     <div class="cards-grid">
+      <CardComponent> </CardComponent>
       <CardComponent />
       <CardComponent />
       <CardComponent />
@@ -23,7 +24,7 @@ import CardComponent from '@/components/ui/CardComponent.vue'
 
 <style scoped>
 .components {
-  height: 90dvh;
+  min-height: 90dvh;
   background-color: tomato;
 }
 </style>
