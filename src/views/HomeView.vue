@@ -42,6 +42,7 @@
   position: absolute;
   top: 18px;
   right: 15px;
+  z-index: 2;
 }
 
 input {
