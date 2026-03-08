@@ -2,13 +2,16 @@
 
 <template>
   <div class="home">
-    <h1>The is the Home vue</h1>
-    <div class="section-label">Font 1 lorem200</div>
+    <div class="cta">
+      <h1>The Fastest CSS Library Ever</h1>
+    </div>
   </div>
 </template>
 
 <style scoped>
 .home {
-  font-size: 3rem;
+  font-size: 1rem;
+  /* background-color: var(--bg-color); */
+  height: 90dvh;
 }
 </style>
