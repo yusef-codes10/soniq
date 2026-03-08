@@ -27,6 +27,7 @@
 
 .search-input {
   width: clamp(280px, 60vw, 700px);
+  margin: 0 auto;
 }
 
 input {
