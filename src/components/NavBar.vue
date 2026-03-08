@@ -2,13 +2,15 @@
 
 <template>
   <nav>
-    <h2 class="logo">Soniq</h2>
+    <h2 class="logo">
+      <RouterLink :to="{ name: 'Home' }">Soniq</RouterLink>
+    </h2>
     <div class="links">
       <ul class="hidden">
-        <li>Layouts</li>
-        <li>buttons</li>
-        <li>forms</li>
-        <li>Components</li>
+        <li><RouterLink :to="{ name: 'Layouts' }">Layouts</RouterLink></li>
+        <li><RouterLink :to="{ name: 'Buttons' }">Buttons</RouterLink></li>
+        <li><RouterLink :to="{ name: 'Forms' }">Forms</RouterLink></li>
+        <li><RouterLink :to="{ name: 'Components' }">Components</RouterLink></li>
       </ul>
     </div>
   </nav>
@@ -38,6 +40,11 @@ ul {
   list-style-type: none;
   gap: 1rem;
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 @media (max-width: 620px) {
