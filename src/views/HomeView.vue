@@ -20,13 +20,13 @@
 
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 
   background-color: sienna;
 }
 
 .search-input {
-  width: 100%;
+  width: clamp(280px, 60vw, 700px);
 }
 
 input {
