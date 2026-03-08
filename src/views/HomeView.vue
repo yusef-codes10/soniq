@@ -15,16 +15,18 @@
 .home {
   font-size: 1rem;
   /* background-color: var(--bg-color); */
-  max-height: 90dvh;
-  height: 100%;
+  /* max-height: 90dvh; */
+  height: 90dvh;
 
   display: flex;
   justify-content: center;
   align-content: center;
+
+  background-color: sienna;
 }
 
 .search-input {
-  width: 60%;
+  width: 100%;
 }
 
 input {
