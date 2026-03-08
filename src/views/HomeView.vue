@@ -3,9 +3,7 @@
 <template>
   <div class="home">
     <h1>The is the Home vue</h1>
-    <div class="section-label">Font 1</div>
-    <div class="caption">Font 1</div>
-    <div class="brutalist-title">Font 3</div>
+    <div class="section-label">Font 1 lorem200</div>
   </div>
 </template>
 

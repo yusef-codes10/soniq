@@ -1,10 +1,33 @@
+:root {
+
+    --title-font: 'Bricolage Grotesque', sans-serif;
+    --main-font: 'Space Grotesk', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    /* font-family: var(--title-font); */
+    /* font-family: "Space Grotesk", sans-serif; */
+    /* font-family: "Inter", sans-serif; */
+    /* font-family: "Bricolage Grotesque", sans-serif; */
+    font-family: var(--main-font);
+}
+
 h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--title-font);
+}
+
+/* h1,
 .brutalist-title {
     font-family: 'Permanent Marker', cursive;
 }
@@ -15,4 +38,4 @@ h1,
 
 .caption {
     font-family: 'Indie Flower', cursive;
-}
+} */
