@@ -5,7 +5,8 @@
     <div class="cta">
       <h1>The Fastest CSS Library Ever</h1>
       <div class="search-input">
-        <input type="search" name="" id="" />
+        <i class="fa-brands fa-sistrix"></i>
+        <input type="search" placeholder="Search ..." />
       </div>
     </div>
   </div>
@@ -25,9 +26,22 @@
   background-color: sienna;
 }
 
+.home h1 {
+  font-size: clamp(2rem, 6vw + 0.5rem, 4rem);
+  margin: 1rem 0;
+}
+
 .search-input {
   width: clamp(280px, 60vw, 700px);
   margin: 0 auto;
+  position: relative;
+}
+
+.search-input i {
+  font-size: 1.7rem;
+  position: absolute;
+  top: 18px;
+  right: 15px;
 }
 
 input {
