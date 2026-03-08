@@ -7,7 +7,9 @@ import cards from '@/data/cards.js'
   <div class="components">
     This is the components vie
     <div class="cards-grid">
-      <CardComponent v-for="card in cards" :key="card.id" :title="card.name"> </CardComponent>
+      <CardComponent v-for="card in cards" :key="card.id" :title="card.name">
+        <component :is="card?.component"></component>
+      </CardComponent>
     </div>
   </div>
 </template>
