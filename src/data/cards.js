@@ -1,8 +1,14 @@
+import CardComp1 from '@/components/cards/CardComp1.vue'
+import CardComp2 from '@/components/cards/CardComp2.vue'
+import CardComp3 from '@/components/cards/CardComp3.vue'
+import CardComp4 from '@/components/cards/CardComp4.vue'
+
 // this is the cards file
 const cards = [
   {
     id: 1,
     name: 'card-1',
+    component: CardComp1,
     html: `
         <div class="card">
         <div class="card__content"></div>
@@ -75,6 +81,7 @@ const cards = [
   {
     id: 2,
     name: 'card-2',
+    component: CardComp2,
     html: `
 <div class="card">
   <div class="card-inner">
@@ -144,6 +151,7 @@ const cards = [
   {
     id: 3,
     name: 'card-3',
+    component: CardComp3,
     html: `
   <div class="book">
     <p>Hello</p>
@@ -220,8 +228,9 @@ p {
     `,
   },
   {
-    id: 3,
-    name: 'card-3',
+    id: 4,
+    name: 'card-4',
+    component: CardComp4,
     html: `
   <div class="card">
     <div class="head">Window</div>
