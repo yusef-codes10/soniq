@@ -28,14 +28,14 @@ const routes = [
   },
   {
     path: '/components',
-    path: 'Components',
+    name: 'Components',
     component: ComponentsView,
   },
 ]
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [],
+  routes,
 })
 
 export default router
