@@ -70,3 +70,10 @@ h6 {
 
     box-shadow: 0.25rem 0.25rem #121212;
 }
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    /* margin: 0 auto; */
+}
