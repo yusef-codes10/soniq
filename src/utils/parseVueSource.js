@@ -1,5 +1,5 @@
 // ! this file has the function that parses the vue string source into sapaarate html and css strings
-export function parseVueSource(source) {
+const parseVueSource = (source) => {
   // Extract template
   const templateMatch = source.match(/<template[^>]*>([\s\S]*?)<\/template>/)
 
@@ -15,3 +15,5 @@ export function parseVueSource(source) {
     styles,
   }
 }
+
+export default parseVueSource
