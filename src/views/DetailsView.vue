@@ -1,5 +1,5 @@
 <script setup>
-import { defineProps } from 'vue'
+import { defineProps, computed } from 'vue'
 
 const { slug } = defineProps({
   slug: {
@@ -8,12 +8,22 @@ const { slug } = defineProps({
   },
 })
 
+import { componentsStore } from '@/stores/componentStore.js'
+
+const myStore = componentsStore()
+
+const card = computed(() => {
+  const cards = [...myStore.buttonsArray, ...myStore.cardsArray]
+  return cards.find((el) => el.slug === slug)
+})
+
 console.log(slug)
 </script>
 <template>
   <div class="details">
     This is the details view
     <h1>{{ slug }}</h1>
+    <h2>{{ card.name }}</h2>
   </div>
 </template>
 <style scoped>
