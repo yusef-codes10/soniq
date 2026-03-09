@@ -1,5 +1,6 @@
 import ButtonsView from '@/views/ButtonsView.vue'
 import ComponentsView from '@/views/ComponentsView.vue'
+import DetailsView from '@/views/DetailsView.vue'
 import FormsView from '@/views/FormsView.vue'
 import HomeView from '@/views/HomeView.vue'
 import LayoutsView from '@/views/LayoutsView.vue'
@@ -30,6 +31,12 @@ const routes = [
     path: '/components',
     name: 'Components',
     component: ComponentsView,
+  },
+  // dynamic route
+  {
+    path: '/:slug',
+    name: 'Details',
+    component: DetailsView,
   },
 ]
 
