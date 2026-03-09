@@ -115,3 +115,11 @@ h6 {
 
     border: 1px solid #1e293b;
 }
+
+.code-header {
+    background: #0f172a;
+    padding: 8px 12px;
+    border-bottom: 1px solid #1e293b;
+    font-size: 0.75rem;
+    color: #94a3b8;
+}
