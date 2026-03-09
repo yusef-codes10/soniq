@@ -11,7 +11,7 @@ import cards from '@/data/cards.js'
       <CardComponent v-for="card in cards" :key="card.id" :title="card.name">
         <component :is="card?.component"></component>
 
-        <template>
+        <template #code>
           <CodeSection :source="card.source" />
         </template>
       </CardComponent>
