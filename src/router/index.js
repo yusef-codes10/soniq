@@ -37,6 +37,7 @@ const routes = [
     path: '/:slug',
     name: 'Details',
     component: DetailsView,
+    props: true,
   },
 ]
 
