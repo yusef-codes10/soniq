@@ -1,5 +1,6 @@
 <script setup>
 import CardComponent from '@/components/ui/CardComponent.vue'
+import CodeSection from '@/components/ui/CodeSection.vue'
 import cards from '@/data/cards.js'
 </script>
 
@@ -9,6 +10,10 @@ import cards from '@/data/cards.js'
     <div class="cards-grid">
       <CardComponent v-for="card in cards" :key="card.id" :title="card.name">
         <component :is="card?.component"></component>
+
+        <template>
+          <CodeSection :source="card.source" />
+        </template>
       </CardComponent>
     </div>
   </div>

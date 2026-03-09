@@ -16,12 +16,6 @@ import buttons from '@/data/buttons.js'
           <CodeSection :source="btn.source" />
         </template>
       </CardComponent>
-      <CardComponent />
-      <CardComponent />
-      <CardComponent />
-      <CardComponent />
-      <CardComponent />
-      <CardComponent />
     </div>
   </div>
 </template>
