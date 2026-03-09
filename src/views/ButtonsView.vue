@@ -10,8 +10,18 @@ import parseVueSource from '@/utils/parseVueSource.js'
       <CardComponent v-for="btn in buttons" :key="btn.id" :title="btn.name">
         <component :is="btn?.component"></component>
         <div class="code-block">
-          <div class="html">{{ parseVueSource(btn.source).template }}</div>
-          <div class="css">{{ parseVueSource(btn.source).styles }}</div>
+          <pre>
+            <code>
+
+              <div class="html">{{ parseVueSource(btn.source).template }}</div>
+            </code>
+          </pre>
+          <pre>
+              <code>
+
+                <div class="css">{{ parseVueSource(btn.source).styles }}</div>
+              </code>
+          </pre>
         </div>
       </CardComponent>
       <CardComponent />

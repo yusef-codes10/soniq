@@ -77,3 +77,17 @@ h6 {
     gap: 1rem;
     /* margin: 0 auto; */
 }
+
+.html {
+    background-color: #2164AF;
+
+}
+
+.css {
+    background-color: #5294FF;
+}
+
+.html,
+.css {
+    font-size: .7rem;
+}
