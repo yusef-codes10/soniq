@@ -11,7 +11,7 @@ const myStore = componentsStore()
   <div class="components">
     This is the components vie
     <div class="cards-grid">
-      <CardComponent v-for="card in myStore.cardsArray" :key="card.id" :title="card.name">
+      <CardComponent v-for="card in myStore.cardsArray" :key="card.id" :comp="card">
         <component :is="card?.component"></component>
 
         <template #code>

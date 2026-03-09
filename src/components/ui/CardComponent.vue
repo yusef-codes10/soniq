@@ -2,8 +2,9 @@
 import { defineProps } from 'vue'
 
 defineProps({
-  title: {
-    type: String,
+  comp: {
+    type: Object,
+    required: true,
   },
 })
 </script>
