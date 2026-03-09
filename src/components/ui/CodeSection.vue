@@ -21,7 +21,12 @@ const parsed = computed(() => parseVueSource(props.source))
 
 <style scoped>
 .code-container {
+  max-height: 200px;
   overflow: auto;
-  height: 200px;
+  width: 100%;
+}
+
+.code {
+  white-space: pre;
 }
 </style>

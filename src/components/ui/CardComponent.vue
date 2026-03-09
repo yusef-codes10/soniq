@@ -24,17 +24,26 @@ defineProps({
 <style scoped>
 .card {
   height: auto;
-  width: 100%;
+  /* width: auto; */
   background-color: springgreen;
   font-size: 2rem;
   padding: 0.75rem 1rem;
 
   display: flex;
   flex-direction: column;
+  width: 100%; /* was: auto */
+  max-width: 100%;
+  overflow: hidden; /* clip anything that still escapes */
+  box-sizing: border-box;
 }
 
 .card-content {
   flex: 1;
+  min-width: 0;
+}
+
+.code {
+  min-width: 0;
 }
 
 button {
@@ -53,5 +62,10 @@ button:hover {
 button:active {
   translate: 0 0.125rem;
   box-shadow: 0.125rem 0.125rem #121212;
+}
+
+.card-content,
+.code {
+  min-width: 0;
 }
 </style>
