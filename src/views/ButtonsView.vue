@@ -13,13 +13,13 @@ import parseVueSource from '@/utils/parseVueSource.js'
           <pre>
             <code>
 
-              <div class="html">{{ parseVueSource(btn.source).template }}</div>
+              <div class="html code">{{ parseVueSource(btn.source).template }}</div>
             </code>
           </pre>
           <pre>
               <code>
 
-                <div class="css">{{ parseVueSource(btn.source).styles }}</div>
+                <div class="css code">{{ parseVueSource(btn.source).styles }}</div>
               </code>
           </pre>
         </div>
