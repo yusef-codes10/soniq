@@ -20,12 +20,19 @@ const card = computed(() => {
 console.log(myStore.buttonsArray)
 console.log(myStore.cardsArray)
 console.log(card.value)
+
+// utility
+import parseVueSource from '@/utils/parseVueSource.js'
+
+const parsed = computed(() => parseVueSource(card.value.source))
 </script>
 <template>
   <div class="details">
     This is the details view
     <h1>{{ props.slug }}</h1>
     <h2>{{ card?.name }}</h2>
+    <p>{{ parsed.template }}</p>
+    <p>{{ parsed.styles }}</p>
   </div>
 </template>
 <style scoped>
