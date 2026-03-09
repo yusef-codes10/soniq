@@ -1,16 +1,7 @@
 <script setup>
 import CardComponent from '@/components/ui/CardComponent.vue'
 import buttons from '@/data/buttons.js'
-import { defineProps } from 'vue'
 import parseVueSource from '@/utils/parseVueSource.js'
-
-// we have to define props to recieve the source?
-
-defineProps({
-  source: {
-    type: Object,
-  },
-})
 </script>
 
 <template>
@@ -18,9 +9,10 @@ defineProps({
     <div class="cards-grid">
       <CardComponent v-for="btn in buttons" :key="btn.id" :title="btn.name">
         <component :is="btn?.component"></component>
-        <pre class="code-block">
-  <code>{{ btn.source }}</code>
-</pre>
+        <div class="code-block">
+          <div class="html">{{ parseVueSource(btn.source).template }}</div>
+          <div class="css">{{ parseVueSource(btn.source).styles }}</div>
+        </div>
       </CardComponent>
       <CardComponent />
       <CardComponent />
