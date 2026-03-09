@@ -12,6 +12,7 @@ defineProps({
   <div class="card border">
     This is the card {{ title }}
     <slot></slot>
+    <button>code</button>
   </div>
 </template>
 

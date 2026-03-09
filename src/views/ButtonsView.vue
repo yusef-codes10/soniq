@@ -1,4 +1,5 @@
 <script setup>
+import CardComponent from '@/components/ui/CardComponent.vue'
 import buttons from '@/data/buttons.js'
 </script>
 
@@ -8,6 +9,12 @@ import buttons from '@/data/buttons.js'
       <CardComponent v-for="btn in buttons" :key="btn.id" :title="btn.name">
         <component :is="btn?.component"></component>
       </CardComponent>
+      <CardComponent />
+      <CardComponent />
+      <CardComponent />
+      <CardComponent />
+      <CardComponent />
+      <CardComponent />
     </div>
   </div>
 </template>
