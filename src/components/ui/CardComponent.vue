@@ -28,6 +28,10 @@ defineProps({
   flex-direction: column;
 }
 
+slot {
+  flex: 1;
+}
+
 button {
   background: var(--brand-color);
   align-self: flex-end;
@@ -39,5 +43,10 @@ button {
 
 button:hover {
   background-color: var(--brand-hover);
+}
+
+button:active {
+  translate: 0 0.125rem;
+  box-shadow: 0.125rem 0.125rem #121212;
 }
 </style>
