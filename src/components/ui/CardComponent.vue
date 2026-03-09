@@ -14,6 +14,9 @@ defineProps({
     <div class="card-content">
       <slot></slot>
     </div>
+    <div class="code">
+      <slot name="code" />
+    </div>
     <button class="border">&lt;/&gt; Get Code</button>
   </div>
 </template>
