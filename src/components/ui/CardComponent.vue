@@ -12,7 +12,7 @@ defineProps({
   <div class="card border">
     This is the card {{ title }}
     <slot></slot>
-    <button>&lt;/&gt; Get Code</button>
+    <button class="border">&lt;/&gt; Get Code</button>
   </div>
 </template>
 
@@ -29,9 +29,15 @@ defineProps({
 }
 
 button {
-  background: none;
-  border: none;
+  background: var(--brand-color);
   align-self: flex-end;
   justify-self: flex-end;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 6px 12px;
+}
+
+button:hover {
+  background-color: var(--brand-hover);
 }
 </style>
