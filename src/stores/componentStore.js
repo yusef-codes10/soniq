@@ -12,6 +12,6 @@ export const componentsStore = defineStore('components', () => {
 
   return {
     buttonsArray,
-    cards,
+    cardsArray,
   }
 })
