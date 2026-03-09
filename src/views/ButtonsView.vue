@@ -1,13 +1,16 @@
 <script setup>
 import CardComponent from '@/components/ui/CardComponent.vue'
 import CodeSection from '@/components/ui/CodeSection.vue'
-import buttons from '@/data/buttons.js'
+
+import { componentsStore } from '@/stores/componentStore.js'
+
+const myStore = componentsStore()
 </script>
 
 <template>
   <div class="buttons">
     <div class="cards-grid">
-      <CardComponent v-for="btn in buttons" :key="btn.id" :title="btn.name">
+      <CardComponent v-for="btn in myStore.buttonsArray" :key="btn.id" :title="btn.name">
         <!-- preview -->
         <component :is="btn.component" />
 
