@@ -9,31 +9,32 @@ import CardComp3Source from '@/components/cards/CardComp3.vue?raw'
 
 import CardComp4 from '@/components/cards/CardComp4.vue'
 import CardComp4Source from '@/components/cards/CardComp4.vue?raw'
+import { markRaw } from 'vue'
 
 // this is the cards file
 const cards = [
   {
     id: 1,
     name: 'card-1',
-    component: CardComp1,
+    component: markRaw(CardComp1),
     source: CardComp1Source,
   },
   {
     id: 2,
     name: 'card-2',
-    component: CardComp2,
+    component: markRaw(CardComp2),
     source: CardComp2Source,
   },
   {
     id: 3,
     name: 'card-3',
-    component: CardComp3,
+    component: markRaw(CardComp3),
     source: CardComp3Source,
   },
   {
     id: 4,
     name: 'card-4',
-    component: CardComp4,
+    component: markRaw(CardComp4),
     source: CardComp4Source,
   },
 ]
