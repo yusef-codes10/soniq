@@ -17,7 +17,10 @@ defineProps({
     <div class="code">
       <slot name="code" />
     </div>
-    <button class="border">&lt;/&gt; Get Code</button>
+    <button class="border">
+      &lt;/&gt;
+      <RouterLink :to="{ name: 'Details', params: { slug: title } }"> Get Code </RouterLink>
+    </button>
   </div>
 </template>
 

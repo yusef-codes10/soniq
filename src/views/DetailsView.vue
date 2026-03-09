@@ -11,7 +11,10 @@ const { slug } = defineProps({
 console.log(slug)
 </script>
 <template>
-  <div class="details">This is the details view</div>
+  <div class="details">
+    This is the details view
+    <h1>{{ slug }}</h1>
+  </div>
 </template>
 <style scoped>
 </style>
