@@ -302,3 +302,6 @@ p {
 ]
 
 export default cards
+
+// ! having the code source as an attribute is not scalable whatsoever
+// ! we can use vite raw attribute
