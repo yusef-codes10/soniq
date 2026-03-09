@@ -11,7 +11,9 @@ defineProps({
 <template>
   <div class="card border">
     This is the card {{ title }}
-    <slot></slot>
+    <div class="card-content">
+      <slot></slot>
+    </div>
     <button class="border">&lt;/&gt; Get Code</button>
   </div>
 </template>
@@ -28,7 +30,7 @@ defineProps({
   flex-direction: column;
 }
 
-slot {
+.card-content {
   flex: 1;
 }
 

@@ -69,6 +69,9 @@ h6 {
     border: solid 0.25rem #121212;
 
     box-shadow: 0.25rem 0.25rem #121212;
+
+    transition: translate 200ms, box-shadow 200ms;
+
 }
 
 .cards-grid {
