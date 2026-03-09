@@ -16,24 +16,28 @@ const cards = [
   {
     id: 1,
     name: 'card-1',
+    slug: 'card-1',
     component: markRaw(CardComp1),
     source: CardComp1Source,
   },
   {
     id: 2,
     name: 'card-2',
+    slug: 'card-2',
     component: markRaw(CardComp2),
     source: CardComp2Source,
   },
   {
     id: 3,
     name: 'card-3',
+    slug: 'card-3',
     component: markRaw(CardComp3),
     source: CardComp3Source,
   },
   {
     id: 4,
     name: 'card-4',
+    slug: 'card-4',
     component: markRaw(CardComp4),
     source: CardComp4Source,
   },

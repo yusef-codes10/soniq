@@ -7,6 +7,7 @@ const buttons = [
   {
     id: 1,
     name: 'Retro Button',
+    slug: 'retro-button',
     component: markRaw(ButtonComp1),
     source: ButtonComp1Source,
   },
