@@ -27,6 +27,9 @@ const parsed = computed(() => parseVueSource(props.source))
 }
 
 .code {
-  white-space: pre;
+  white-space: pre; /* keep this for code formatting */
+  overflow-x: auto; /* scroll within the pre, not the page */
+  max-width: 100%;
+  display: block;
 }
 </style>
