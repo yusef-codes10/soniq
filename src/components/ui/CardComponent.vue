@@ -73,6 +73,3 @@ button:active {
   min-width: 0;
 }
 </style>
-
-<!-- TODO:  define actual props for the card-->
- <!-- FIXME: fix the bugs related to the pinia store -->

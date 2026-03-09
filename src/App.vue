@@ -9,5 +9,4 @@ import NavBar from './components/NavBar.vue'
 
 <style scoped></style>
 
-<!-- TODO: 1- the retro buttons sttyle, the views butons, layouts form ..etc -->
- <!-- TODO: the home view and small dashboard -->
+<!-- TODO: add details and remove code section from the componet card, add it in the details -->
