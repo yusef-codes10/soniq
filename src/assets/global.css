@@ -117,6 +117,7 @@ h6 {
     white-space: pre;
 
     border: 1px solid #1e293b;
+    overflow-y: auto;
 }
 
 .code-header {

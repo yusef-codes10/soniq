@@ -18,3 +18,10 @@ const parsed = computed(() => parseVueSource(props.source))
     <pre class="code">{{ parsed.styles }}</pre>
   </div>
 </template>
+
+<style scoped>
+.code-container {
+  overflow: auto;
+  height: 200px;
+}
+</style>
