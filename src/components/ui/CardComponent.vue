@@ -11,7 +11,7 @@ defineProps({
 
 <template>
   <div class="card border">
-    This is the card {{ title }}
+    This is the card {{ comp.name }}
     <div class="card-content">
       <slot></slot>
     </div>
@@ -20,7 +20,7 @@ defineProps({
     </div>
     <button class="border">
       &lt;/&gt;
-      <RouterLink :to="{ name: 'Details', params: { slug: title } }"> Get Code </RouterLink>
+      <RouterLink :to="{ name: 'Details', params: { slug: comp.name } }"> Get Code </RouterLink>
     </button>
   </div>
 </template>
