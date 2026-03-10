@@ -29,7 +29,7 @@ console.log(card.value)
 </script>
 <template>
   <div class="details">
-    <div class="details-page">
+    <div class="details-page border">
       <div class="preview">
         <h2>{{ card?.name }}</h2>
         <component :is="card?.component" />
@@ -40,9 +40,16 @@ console.log(card.value)
   </div>
 </template>
 <style scoped>
+.details {
+  height: 90dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .details-page {
+  width: 80%;
   background-color: red;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   display: flex;
   justify-content: space-between;
   min-height: 450px;
