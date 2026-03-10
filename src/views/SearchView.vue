@@ -3,6 +3,7 @@
 import { useRoute } from 'vue-router'
 import { computed } from 'vue'
 import { componentsStore } from '@/stores/componentStore.js'
+import CardComponent from '@/components/ui/CardComponent.vue'
 
 const route = useRoute()
 const myStore = componentsStore()
@@ -25,6 +26,10 @@ console.log(searchQuery)
     <div class="result" v-if="filterCards.length">
       <p v-for="card in filterCards" :key="card.id">
         {{ card.name }}
+        <CardComponent v-for="card in filterCards" :key="card.id" :comp="card">
+          <!-- preview -->
+          <component :is="card.component" />
+        </CardComponent>
       </p>
     </div>
     <div class="no" v-else>Not found</div>
