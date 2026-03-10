@@ -6,6 +6,17 @@ import { ref } from 'vue'
 const route = useRouter()
 
 const searchQuery = ref('')
+
+const submitSearch = () => {
+  if (!searchQuery.value) return
+
+  // here we push to the router of search
+  route.push({
+    name: 'Search',
+    query: { q: searchQuery.value },
+  })
+  // all;s left is to render the esult to the search view
+}
 </script>
 
 <template>
@@ -18,7 +29,7 @@ const searchQuery = ref('')
           type="search"
           placeholder="Search ..."
           v-model="searchQuery"
-          @keydown.enter="console.log('heeeeeeeeeeey')"
+          @keydown.enter="submitSearch"
         />
       </div>
     </div>
