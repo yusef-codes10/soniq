@@ -35,10 +35,10 @@ const showCSS = () => {
 
 <style scoped>
 .code-container {
-  max-height: 450px;
-  overflow: auto;
   width: 50%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .code {
