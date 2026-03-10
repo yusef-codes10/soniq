@@ -11,11 +11,13 @@ const parsed = computed(() => parseVueSource(props.source))
 const isHTML = ref(true)
 const isCSS = ref(false)
 const showHTML = () => {
-  isHTML.value = !isHTML.value
+  isHTML.value = true
+  isCSS.value = false
 }
 
 const showCSS = () => {
-  isCSS.value = !isCSS.value
+  isHTML.value = false
+  isCSS.value = true
 }
 </script>
 
