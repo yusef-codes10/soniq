@@ -47,7 +47,7 @@ const submitSearch = () => {
   justify-content: center;
   align-items: center;
 
-  background-color: var(--bg-color);
+  /* background-color: var(--bg-color); */
 }
 
 .home h1 {

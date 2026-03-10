@@ -52,7 +52,7 @@ defineProps({
 }
 
 button {
-  background: var(--brand-color);
+  background: var(--secondary-hover);
   align-self: flex-end;
   justify-self: flex-end;
   cursor: pointer;
@@ -61,7 +61,7 @@ button {
 }
 
 button:hover {
-  background-color: var(--brand-hover);
+  background-color: var(--secondary-color);
 }
 
 button:active {
@@ -69,6 +69,10 @@ button:active {
   box-shadow: 0.125rem 0.125rem #121212;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .card-content,
 .code {
   min-width: 0;
