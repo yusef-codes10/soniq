@@ -55,6 +55,7 @@ console.log(card.value)
   align-items: center;
 }
 
+/* FIXME: center this text */
 .preview h2 {
   /* justify-self: flex-start; */
   align-self: flex-start;
