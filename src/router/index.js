@@ -4,6 +4,7 @@ import DetailsView from '@/views/DetailsView.vue'
 import FormsView from '@/views/FormsView.vue'
 import HomeView from '@/views/HomeView.vue'
 import LayoutsView from '@/views/LayoutsView.vue'
+import SearchView from '@/views/SearchView.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
@@ -38,6 +39,12 @@ const routes = [
     name: 'Details',
     component: DetailsView,
     props: true,
+  },
+  // search rout
+  {
+    path: '/search',
+    name: 'Search',
+    component: SearchView,
   },
 ]
 
