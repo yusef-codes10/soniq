@@ -14,7 +14,7 @@ import { componentsStore } from '@/stores/componentStore.js'
 const myStore = componentsStore()
 
 const card = computed(() => {
-  const cards = [...myStore.buttonsArray, ...myStore.cardsArray]
+  const cards = [...myStore.buttonsArray, ...myStore.cardsArray, ...myStore.formsArray]
   return cards.find((el) => el.slug === props.slug)
 })
 

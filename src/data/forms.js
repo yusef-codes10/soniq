@@ -7,8 +7,8 @@ import { markRaw } from 'vue'
 const forms = [
   {
     id: 1,
-    name: 'Retro Button',
-    slug: 'retro-button',
+    name: 'Retro Form',
+    slug: 'retro-form',
     component: markRaw(RetroForm),
     source: RetroFormSource,
   },
