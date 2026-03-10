@@ -1,6 +1,6 @@
 <script setup>
 import CardComponent from '@/components/ui/CardComponent.vue'
-import CodeSection from '@/components/ui/CodeSection.vue'
+// import CodeSection from '@/components/ui/CodeSection.vue'
 
 import { componentsStore } from '@/stores/componentStore.js'
 
@@ -15,9 +15,9 @@ const myStore = componentsStore()
         <component :is="btn.component" />
 
         <!-- code -->
-        <template #code>
+        <!-- <template #code>
           <CodeSection :source="btn.source" />
-        </template>
+        </template> -->
       </CardComponent>
     </div>
   </div>

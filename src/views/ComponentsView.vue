@@ -1,6 +1,6 @@
 <script setup>
 import CardComponent from '@/components/ui/CardComponent.vue'
-import CodeSection from '@/components/ui/CodeSection.vue'
+// import CodeSection from '@/components/ui/CodeSection.vue'
 
 import { componentsStore } from '@/stores/componentStore.js'
 
@@ -14,9 +14,9 @@ const myStore = componentsStore()
       <CardComponent v-for="card in myStore.cardsArray" :key="card.id" :comp="card">
         <component :is="card?.component"></component>
 
-        <template #code>
+        <!-- <template #code>
           <CodeSection :source="card.source" />
-        </template>
+        </template> -->
       </CardComponent>
     </div>
   </div>
