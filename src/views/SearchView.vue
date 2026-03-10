@@ -2,7 +2,10 @@
 // use Route to read the url and get the search query
 import { useRoute } from 'vue-router'
 import { computed } from 'vue'
+import { componentsStore } from '@/stores/componentStore.js'
+
 const route = useRoute()
+const myStore = componentsStore()
 
 const searchQuery = computed(() => {
   return route.query.q?.toLowerCase() || ''
