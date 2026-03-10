@@ -29,12 +29,29 @@ console.log(card.value)
 </script>
 <template>
   <div class="details">
-    This is the details view
-    <h1>{{ props.slug }}</h1>
-    <h2>{{ card?.name }}</h2>
+    <div class="details-page">
+      <div class="preview">
+        <h2>{{ card?.name }}</h2>
+        <component :is="card?.component" />
+      </div>
 
-    <CodeSection :source="card?.source" />
+      <CodeSection :source="card?.source" />
+    </div>
   </div>
 </template>
 <style scoped>
+.details-page {
+  background-color: red;
+  border: 2px solid green;
+  display: flex;
+  justify-content: space-between;
+}
+
+.preview {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 </style>
