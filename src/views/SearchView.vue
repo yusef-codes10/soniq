@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="search"></div>
+  <div class="search">Search</div>
 </template>
 
 <style scoped>

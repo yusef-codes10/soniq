@@ -1,4 +1,9 @@
-<script setup></script>
+<script setup>
+// the ruter for the search
+import { useRouter } from 'vue-router'
+
+const route = useRouter()
+</script>
 
 <template>
   <div class="home">
