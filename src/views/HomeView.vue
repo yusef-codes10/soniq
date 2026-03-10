@@ -1,8 +1,11 @@
 <script setup>
 // the ruter for the search
 import { useRouter } from 'vue-router'
+import { ref } from 'vue'
 
 const route = useRouter()
+
+const searchQuery = ref('')
 </script>
 
 <template>
@@ -11,7 +14,12 @@ const route = useRouter()
       <h1>The Fastest CSS Library Ever</h1>
       <div class="search-input">
         <i class="fa-brands fa-sistrix"></i>
-        <input type="search" placeholder="Search ..." />
+        <input
+          type="search"
+          placeholder="Search ..."
+          v-model="searchQuery"
+          @keydown.enter="console.log('heeeeeeeeeeey')"
+        />
       </div>
     </div>
   </div>
