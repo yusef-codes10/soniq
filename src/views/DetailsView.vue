@@ -51,7 +51,13 @@ console.log(card.value)
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+}
+
+.preview h2 {
+  /* justify-self: flex-start; */
+  align-self: flex-start;
+  text-align: center;
 }
 </style>
