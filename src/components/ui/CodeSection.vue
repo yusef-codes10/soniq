@@ -35,7 +35,7 @@ const showCSS = () => {
 
 <style scoped>
 .code-container {
-  max-height: 340px;
+  max-height: 450px;
   overflow: auto;
   width: 50%;
   height: 100%;
@@ -46,5 +46,6 @@ const showCSS = () => {
   overflow-x: auto; /* scroll within the pre, not the page */
   max-width: 100%;
   display: block;
+  height: 100%;
 }
 </style>

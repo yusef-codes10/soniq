@@ -45,6 +45,8 @@ console.log(card.value)
   border: 2px solid green;
   display: flex;
   justify-content: space-between;
+  min-height: 450px;
+  height: 450px; /* establishes real height */
 }
 
 .preview {
