@@ -10,9 +10,9 @@ const myStore = componentsStore()
 <template>
   <div class="forms">
     <div class="cards-grid">
-      <CardComponent v-for="btn in myStore.buttonsArray" :key="btn.id" :comp="btn">
+      <CardComponent v-for="form in myStore.formsArray" :key="form.id" :comp="form">
         <!-- preview -->
-        <component :is="btn.component" />
+        <component :is="form.component" />
       </CardComponent>
     </div>
   </div>
