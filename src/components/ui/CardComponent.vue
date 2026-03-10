@@ -11,7 +11,7 @@ defineProps({
 
 <template>
   <div class="card border">
-    This is the card {{ comp.name }}
+    {{ comp.name }}
     <div class="card-content">
       <slot></slot>
     </div>

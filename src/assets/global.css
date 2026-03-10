@@ -76,10 +76,11 @@ h6 {
 }
 
 .cards-grid {
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, 350px);
     gap: 1rem;
-    /* margin: 0 auto; */
+    justify-content: center;
 }
 
 .html {
