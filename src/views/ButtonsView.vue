@@ -26,6 +26,5 @@ const myStore = componentsStore()
 <style scoped>
 .buttons {
   height: 90dvh;
-  background-color: springgreen;
 }
 </style>

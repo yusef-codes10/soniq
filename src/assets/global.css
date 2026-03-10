@@ -38,6 +38,7 @@ body {
     /* font-family: "Inter", sans-serif; */
     /* font-family: "Bricolage Grotesque", sans-serif; */
     font-family: var(--main-font);
+    background-color: var(--bg-color);
 }
 
 h1,

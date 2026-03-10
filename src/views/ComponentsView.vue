@@ -25,6 +25,5 @@ const myStore = componentsStore()
 <style scoped>
 .components {
   min-height: 90dvh;
-  background-color: tomato;
 }
 </style>

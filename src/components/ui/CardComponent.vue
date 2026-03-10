@@ -29,7 +29,8 @@ defineProps({
 .card {
   height: auto;
   /* width: auto; */
-  background-color: springgreen;
+  /* background-color: springgreen; */
+  background-color: var(--brand-color);
   font-size: 2rem;
   padding: 0.75rem 1rem;
 
