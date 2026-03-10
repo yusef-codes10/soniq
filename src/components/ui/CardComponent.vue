@@ -15,9 +15,9 @@ defineProps({
     <div class="card-content">
       <slot></slot>
     </div>
-    <div class="code">
+    <!-- <div class="code">
       <slot name="code" />
-    </div>
+    </div> -->
     <button class="border">
       &lt;/&gt;
       <RouterLink :to="{ name: 'Details', params: { slug: comp.slug } }"> Get Code </RouterLink>
