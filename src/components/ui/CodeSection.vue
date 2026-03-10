@@ -42,10 +42,8 @@ const showCSS = () => {
 }
 
 .code {
-  white-space: pre; /* keep this for code formatting */
-  overflow-x: auto; /* scroll within the pre, not the page */
-  max-width: 100%;
-  display: block;
-  height: 100%;
+  flex: 1;
+  overflow: auto;
+  white-space: pre;
 }
 </style>
