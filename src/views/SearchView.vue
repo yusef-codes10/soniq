@@ -7,10 +7,12 @@ const route = useRoute()
 const searchQuery = computed(() => {
   return route.query.q?.toLowerCase() || ''
 })
+
+console.log(searchQuery)
 </script>
 
 <template>
-  <div class="search">Search</div>
+  <div class="search">Search you are looking for {{ $route.query }}</div>
 </template>
 
 <style scoped>
