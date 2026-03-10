@@ -22,9 +22,12 @@ console.log(searchQuery)
 <template>
   <div class="search">
     Search you are looking for {{ $route.query }}
-    <div class="result">
-      {{ filterCards.name }}
+    <div class="result" v-if="filterCards.length">
+      <p v-for="card in filterCards" :key="card.id">
+        {{ card.name }}
+      </p>
     </div>
+    <div class="no" v-else>Not found</div>
   </div>
 </template>
 
