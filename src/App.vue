@@ -9,4 +9,4 @@ import NavBar from './components/NavBar.vue'
 
 <style scoped></style>
 
-<!-- TODO: add details and remove code section from the componet card, add it in the details -->
+<!-- TODO: different for different types of components (button, form, card...etc) -->
