@@ -27,37 +27,40 @@ defineProps({
 
 <style scoped>
 .card {
-  height: auto;
-  /* width: auto; */
-  /* background-color: springgreen; */
-  background-color: var(--brand-color);
-  font-size: 2rem;
-  padding: 0.75rem 1rem;
-
   display: flex;
   flex-direction: column;
-  width: 100%; /* was: auto */
+  width: 100%;
   max-width: 100%;
-  overflow: hidden; /* clip anything that still escapes */
+  /* set a reasonable max height to constrain large content */
+  max-height: 30rem; /* you can adjust */
+  background-color: var(--brand-color);
+  padding: 0.75rem 1rem;
   box-sizing: border-box;
+  overflow: hidden; /* clips anything outside card, scroll is on inner content */
+}
+
+.card-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  flex-shrink: 0; /* header stays visible */
 }
 
 .card-content {
-  flex: 1;
-  min-width: 0;
-}
-
-.code {
-  min-width: 0;
+  flex: 1 1 auto; /* takes remaining space */
+  min-height: 200px;
+  min-width: 0; /* allows proper shrinking inside flex */
+  overflow: auto; /* scrolls if content is too big */
+  padding-right: 0.25rem; /* optional, avoids scrollbar overlap */
 }
 
 button {
   background: var(--secondary-hover);
   align-self: flex-end;
-  justify-self: flex-end;
   cursor: pointer;
   font-size: 1.2rem;
   padding: 6px 12px;
+  flex-shrink: 0; /* button stays visible */
 }
 
 button:hover {
@@ -72,9 +75,5 @@ button:active {
 a {
   text-decoration: none;
   color: inherit;
-}
-.card-content,
-.code {
-  min-width: 0;
 }
 </style>
