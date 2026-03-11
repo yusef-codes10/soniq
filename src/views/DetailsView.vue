@@ -39,10 +39,10 @@ const card = computed(() => {
 
 <style scoped>
 .details {
-  min-height: 60dvh;
+  /* min-height: 60dvh; */
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding: 2rem 1rem;
 }
 
@@ -55,18 +55,19 @@ const card = computed(() => {
   min-height: 500px;
   height: 600px;
   /* border: 1px solid #3c3c3c; */
-  border-radius: 8px;
-  overflow: hidden;
+  /* border-radius: 8px; */
+  /* overflow: hidden; */
 }
 
 .title {
   position: absolute;
-  top: -1.8rem;
-  left: 1rem;
-  color: red;
-  background-color: green;
-  font-size: 0.9rem;
+  top: 0rem;
+  left: 0rem;
+  color: inherit;
+  /* background-color: green; */
+  font-size: 1.2rem;
   z-index: 10;
+  padding: 0.6rem 0.8rem;
 }
 
 .preview {
