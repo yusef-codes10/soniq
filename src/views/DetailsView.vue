@@ -59,7 +59,7 @@ console.log(card.value)
 }
 
 .preview {
-  width: 50%;
+  max-width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
