@@ -1,6 +1,18 @@
 <script setup>
-import { computed, ref } from 'vue'
+import { computed, ref, onMounted } from 'vue'
 import parseVueSource from '@/utils/parseVueSource.js'
+
+import Prism from 'prismjs'
+
+import 'prismjs/components/prism-markup'
+import 'prismjs/components/prism-css'
+import 'prismjs/components/prism-javascript'
+
+import 'prismjs/themes/prism-tomorrow.css'
+
+onMounted(() => {
+  Prism.highlightAll()
+})
 
 const props = defineProps({
   source: String,
