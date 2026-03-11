@@ -66,9 +66,9 @@ console.log(card.value)
   align-items: center;
 }
 
-:deep(.code-section) {
+/* :deep(.code-section) {
   flex: 1;
-}
+} */
 
 .title {
   position: absolute;
