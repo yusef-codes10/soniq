@@ -39,9 +39,19 @@ const showCSS = () => {
       <button @click="showHTML">HTML</button>
       <button @click="showCSS">CSS</button>
     </div>
-    <pre class="code" v-show="isHTML">{{ parsed.template }}</pre>
+    <pre class="code" v-show="isHTML">
+      <code class="language-html">
+        
+        {{ parsed.template }}
+      </code>
+    </pre>
 
-    <pre class="code" v-show="isCSS">{{ parsed.styles }}</pre>
+    <pre class="code" v-show="isCSS">
+      <code class="language-css">
+        {{ parsed.styles }}
+
+      </code>  
+    </pre>
   </div>
 </template>
 
