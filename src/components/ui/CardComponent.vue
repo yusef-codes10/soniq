@@ -1,5 +1,17 @@
 <script setup>
-import { defineProps } from 'vue'
+import { defineProps, onMounted } from 'vue'
+
+import Prism from 'prismjs'
+
+import 'prismjs/components/prism-markup'
+import 'prismjs/components/prism-css'
+import 'prismjs/components/prism-javascript'
+
+import 'prismjs/themes/prism-tomorrow.css'
+
+onMounted(() => {
+  Prism.highlightAll()
+})
 
 defineProps({
   comp: {
