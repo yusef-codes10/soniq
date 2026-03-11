@@ -49,13 +49,19 @@ defineProps({
 }
 
 .card-content {
-  flex: 1 1 auto; /* takes remaining space */
+  flex: 1 1 auto;
   min-height: 200px;
-  min-width: 0; /* allows proper shrinking inside flex */
-  overflow: auto; /* scrolls if content is too big */
-  padding-right: 0.25rem; /* optional, avoids scrollbar overlap */
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.preview {
+  transform: scale(0.75);
+  transform-origin: center;
+}
 button {
   background: var(--secondary-hover);
   align-self: flex-end;
