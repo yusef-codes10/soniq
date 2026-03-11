@@ -49,6 +49,7 @@ console.log(card.value)
   align-items: center;
 }
 .details-page {
+  position: relative;
   width: 80%;
   background-color: red;
   /* border: 2px solid green; */
@@ -59,17 +60,19 @@ console.log(card.value)
 }
 
 .preview {
-  max-width: 50%;
+  flex: 1;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-/* FIXME: center this text */
-.preview h2 {
-  /* justify-self: flex-start; */
-  align-self: flex-start;
-  text-align: center;
+:deep(.code-section) {
+  flex: 1;
+}
+
+.title {
+  position: absolute;
+  top: -1.5rem;
+  left: 1rem;
 }
 </style>
