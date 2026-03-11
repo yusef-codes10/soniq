@@ -3,6 +3,7 @@ import { ref, computed } from 'vue'
 import buttons from '@/data/buttons.js'
 import cards from '@/data/cards.js'
 import forms from '@/data/forms.js'
+import layouts from '@/data/layouts.js'
 
 export const componentsStore = defineStore('components', () => {
   // now what we ahve to do is to use and define every sinhle array here
@@ -11,11 +12,12 @@ export const componentsStore = defineStore('components', () => {
   const buttonsArray = buttons
   const cardsArray = cards
   const formsArray = forms
+  const layoutsArray = layouts
 
   // * getters
   // * all porducts together
   const allComponents = computed(() => {
-    const comps = [...buttonsArray, ...cardsArray, ...formsArray]
+    const comps = [...buttonsArray, ...cardsArray, ...formsArray, ...layoutsArray]
     return comps
   })
 
@@ -23,6 +25,7 @@ export const componentsStore = defineStore('components', () => {
     buttonsArray,
     cardsArray,
     formsArray,
+    layoutsArray,
 
     allComponents,
   }
