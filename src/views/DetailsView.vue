@@ -30,8 +30,10 @@ console.log(card.value)
 <template>
   <div class="details">
     <div class="details-page border">
+      <div class="title">
+        <h3>{{ card?.name }}</h3>
+      </div>
       <div class="preview">
-        <h2>{{ card?.name }}</h2>
         <component :is="card?.component" />
       </div>
 
@@ -52,15 +54,15 @@ console.log(card.value)
   /* border: 2px solid green; */
   display: flex;
   justify-content: space-between;
-  min-height: 450px;
-  height: 450px; /* establishes real height */
+  min-height: 500px;
+  height: 500px; /* establishes real height */
 }
 
 .preview {
   width: 50%;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
 }
 
