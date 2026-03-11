@@ -17,46 +17,55 @@ const card = computed(() => {
   const cards = [...myStore.buttonsArray, ...myStore.cardsArray, ...myStore.formsArray]
   return cards.find((el) => el.slug === props.slug)
 })
-
-console.log(myStore.buttonsArray)
-console.log(myStore.cardsArray)
-console.log(card.value)
-
-// utility
-// import parseVueSource from '@/utils/parseVueSource.js'
-
-// const parsed = computed(() => parseVueSource(card.value.source))
 </script>
+
 <template>
   <div class="details">
-    <div class="details-page border">
+    <div class="details-page">
       <div class="title">
         <h3>{{ card?.name }}</h3>
       </div>
+
       <div class="preview">
         <component :is="card?.component" />
       </div>
 
-      <CodeSection :source="card?.source" />
+      <div class="code-section">
+        <CodeSection :source="card?.source" />
+      </div>
     </div>
   </div>
 </template>
+
 <style scoped>
 .details {
-  height: 90dvh;
+  min-height: 90dvh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  padding: 2rem 1rem;
 }
+
 .details-page {
   position: relative;
-  width: 80%;
-  background-color: red;
-  /* border: 2px solid green; */
+  width: 90%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   min-height: 500px;
-  height: 500px; /* establishes real height */
+  height: 600px;
+  border: 1px solid #3c3c3c;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.title {
+  position: absolute;
+  top: -1.8rem;
+  left: 1rem;
+  color: #d4d4d4;
+  font-size: 0.9rem;
+  z-index: 1;
 }
 
 .preview {
@@ -64,17 +73,72 @@ console.log(card.value)
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1.5rem;
+  border-right: 1px solid #3c3c3c;
+  overflow: auto;
 }
 
-/* :deep(.code-section) {
-  flex: 1;
-} */
+.code-section {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
-.title {
-  position: absolute;
-  top: -1.5rem;
-  left: 1rem;
+:deep(.code-container) {
+  width: 100%;
+  height: 100%;
+}
+
+/* ── Tablet ── */
+@media (max-width: 900px) {
+  .details {
+    align-items: flex-start;
+    padding: 2.5rem 1rem 2rem;
+  }
+
+  .details-page {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    min-height: unset;
+  }
+
+  .title {
+    position: static;
+    padding: 0.75rem 1rem 0;
+  }
+
+  .preview {
+    min-height: 220px;
+    border-right: none;
+    border-bottom: 1px solid #3c3c3c;
+  }
+
+  .code-section {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+/* ── Mobile ── */
+@media (max-width: 480px) {
+  .details {
+    padding: 1.5rem 0.5rem 1rem;
+  }
+
+  .details-page {
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  .preview {
+    min-height: 180px;
+    padding: 1rem;
+  }
+
+  .code-section {
+    height: 350px;
+  }
 }
 </style>
-
-<!-- TODO: we should use prism.js for the text highlighting for the codes -->
