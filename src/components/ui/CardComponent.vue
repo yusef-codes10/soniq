@@ -34,7 +34,7 @@ defineProps({
   width: 100%;
   max-width: 100%;
   /* set a reasonable max height to constrain large content */
-  max-height: 30rem; /* you can adjust */
+  max-height: 50rem; /* you can adjust */
   background-color: var(--brand-color);
   padding: 0.75rem 1rem;
   box-sizing: border-box;
@@ -49,17 +49,14 @@ defineProps({
 }
 
 .card-content {
-  flex: 1 1 auto;
-  min-height: 200px;
-  overflow: hidden;
-
+  height: 260px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .preview {
-  transform: scale(0.75);
+  transform: scale(0.65);
   transform-origin: center;
 }
 button {
