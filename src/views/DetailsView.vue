@@ -21,7 +21,7 @@ const card = computed(() => {
 
 <template>
   <div class="details">
-    <div class="details-page">
+    <div class="details-page border">
       <div class="title">
         <h3>{{ card?.name }}</h3>
       </div>
@@ -39,7 +39,7 @@ const card = computed(() => {
 
 <style scoped>
 .details {
-  min-height: 90dvh;
+  min-height: 60dvh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -54,7 +54,7 @@ const card = computed(() => {
   justify-content: space-between;
   min-height: 500px;
   height: 600px;
-  border: 1px solid #3c3c3c;
+  /* border: 1px solid #3c3c3c; */
   border-radius: 8px;
   overflow: hidden;
 }
@@ -63,9 +63,10 @@ const card = computed(() => {
   position: absolute;
   top: -1.8rem;
   left: 1rem;
-  color: #d4d4d4;
+  color: red;
+  background-color: green;
   font-size: 0.9rem;
-  z-index: 1;
+  z-index: 10;
 }
 
 .preview {
