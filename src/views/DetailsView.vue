@@ -76,3 +76,5 @@ console.log(card.value)
   left: 1rem;
 }
 </style>
+
+<!-- TODO: we should use prism.js for the text highlighting for the codes -->
